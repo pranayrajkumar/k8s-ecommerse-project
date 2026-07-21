@@ -11,7 +11,7 @@ HOME_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kastro's Online Store - Premium E-commerce</title>
+    <title>Pranay's Online Store - Premium E-commerce</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -214,7 +214,7 @@ HOME_TEMPLATE = """
     <nav class="navbar">
         <div class="logo">
             <i class="fas fa-store"></i>
-            Kastro Store
+            Pranay Store
         </div>
         <div class="nav-links">
             <a href="#"><i class="fas fa-gift"></i> Deals</a>
@@ -224,7 +224,7 @@ HOME_TEMPLATE = """
     </nav>
     
     <div class="hero">
-        <h1>Welcome to Kastro's Online Store</h1>
+        <h1>Welcome to Pranay's Online Store</h1>
         <p>Discover premium products with lightning-fast delivery and 24/7 customer support. Join thousands of satisfied customers!</p>
         
         <div class="marquee">
@@ -325,7 +325,7 @@ def success():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Order Successful - Kastro Store</title>
+        <title>Order Successful - Pranay Store</title>
         <style>
             * {
                 margin: 0;
@@ -464,7 +464,7 @@ def success():
         <script>
             // Generate random order details
             document.addEventListener('DOMContentLoaded', function() {
-                const orderId = 'KASTRO' + Math.floor(Math.random() * 1000000);
+                const orderId = 'Pranay' + Math.floor(Math.random() * 1000000);
                 const deliveryDate = new Date();
                 deliveryDate.setDate(deliveryDate.getDate() + 3);
                 
