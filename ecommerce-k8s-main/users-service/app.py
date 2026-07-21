@@ -21,7 +21,7 @@ USER_REGISTRATION_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create Account - Kastro Store</title>
+    <title>Create Account - Pranay Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -334,7 +334,7 @@ USER_REGISTRATION_TEMPLATE = """
         <div class="left-panel">
             <div class="logo">
                 <i class="fas fa-store"></i>
-                Kastro's Store
+                Pranay's Store
             </div>
             
             <h2>Join Our Community</h2>
@@ -577,7 +577,7 @@ def home():
         with c.cursor() as cur:
             cur.execute("INSERT INTO users (username) VALUES (%s)", (username,))
             c.commit()
-        msg = "Welcome to Kastro Store! Your account has been created successfully!"
+        msg = "Welcome to Pranay Store! Your account has been created successfully!"
     return render_template_string(USER_REGISTRATION_TEMPLATE, msg=msg)
 
 @app.route("/cart-direct")
