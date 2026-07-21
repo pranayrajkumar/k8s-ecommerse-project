@@ -91,7 +91,7 @@ PAYMENT_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secure Payment - Kastro Store</title>
+    <title>Secure Payment - Pranay Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -1144,7 +1144,7 @@ SUCCESS_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payment Successful - Kastro Store</title>
+    <title>Payment Successful - Pranay Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -1405,7 +1405,7 @@ SUCCESS_TEMPLATE = """
             </div>
             <div class="detail-item">
                 <span>Customer Support:</span>
-                <span><strong>support@kastrostore.com</strong></span>
+                <span><strong>support@Pranaystore.com</strong></span>
             </div>
         </div>
         
@@ -1485,7 +1485,7 @@ def home():
             # Generate transaction details
             transaction_id = MockPaymentGateway.generate_transaction_id()
             auth_code = MockPaymentGateway.generate_auth_code()
-            order_id = f"KASTRO{str(uuid.uuid4())[:8].upper()}"
+            order_id = f"Pranay{str(uuid.uuid4())[:8].upper()}"
             
             # Apply promo code if any
             final_amount = float(amount)
@@ -1529,7 +1529,7 @@ def home():
         except Exception as e:
             print(f"Error in payment processing: {e}")
             # Even if there's an error, redirect to success in demo mode
-            return redirect(f"/success?order_id=KASTRODEMO&transaction_id=TXN{str(uuid.uuid4())[:8].upper()}" +
+            return redirect(f"/success?order_id=PranayDEMO&transaction_id=TXN{str(uuid.uuid4())[:8].upper()}" +
                           f"&auth_code=AUTHDEMO&amount=3769.18&payment_method=card")
     
     return render_template_string(PAYMENT_TEMPLATE, msg=msg)
@@ -1537,7 +1537,7 @@ def home():
 @app.route("/success")
 def success():
     # Get transaction details from URL parameters or generate defaults
-    order_id = request.args.get('order_id', f"KASTRO{str(uuid.uuid4())[:8].upper()}")
+    order_id = request.args.get('order_id', f"Pranay{str(uuid.uuid4())[:8].upper()}")
     transaction_id = request.args.get('transaction_id', MockPaymentGateway.generate_transaction_id())
     auth_code = request.args.get('auth_code', MockPaymentGateway.generate_auth_code())
     amount = request.args.get('amount', '3769.18')
