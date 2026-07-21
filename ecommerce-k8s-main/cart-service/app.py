@@ -97,7 +97,7 @@ PRODUCT_CATALOG_TEMPLATE = """
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Kastro Store</title>
+    <title>Products -  Store</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -475,7 +475,7 @@ PRODUCT_CATALOG_TEMPLATE = """
     <nav class="navbar">
         <a href="/" class="logo">
             <i class="fas fa-store"></i>
-            Kastro Store
+            Pranay Store
         </a>
         
         <div class="cart-indicator">
@@ -776,7 +776,7 @@ def view():
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Your Cart - Kastro Store</title>
+        <title>Your Cart - Pranay Store</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <style>
             * {
@@ -921,7 +921,7 @@ def view():
         <nav class="navbar">
             <a href="/" style="text-decoration: none; color: inherit; display: flex; align-items: center; gap: 10px;">
                 <i class="fas fa-store"></i>
-                <span style="font-size: 1.5rem; font-weight: 700;">Kastro Store</span>
+                <span style="font-size: 1.5rem; font-weight: 700;">Pranay Store</span>
             </a>
             <a href="/" style="color: #667eea; text-decoration: none;">
                 <i class="fas fa-arrow-left"></i> Continue Shopping
